@@ -195,16 +195,16 @@
 			//Server settings
 			$mail->SMTPDebug = 0;
 			$mail->isSMTP();                             
-			$mail->Host       = 'smtp.outlook.com';
+			$mail->Host       = 'smtp.xxxxx.com';
 			$mail->SMTPAuth   = true;
-			$mail->Username   = 'agustin-zaragoza1@eep-igroup.com';
-			$mail->Password   = 'Map09748';
+			$mail->Username   = 'correo@correo.com';
+			$mail->Password   = 'xxxxx';
 			$mail->SMTPSecure = 'tls';
 			$mail->Port       = 587;
 
 			//Recipients
-			$mail->setFrom('agustin-zaragoza1@eep-igroup.com', 'Servifinder Contacto');
-			$mail->addAddress('agustinzarpe@gmail.com');
+			$mail->setFrom('correo@correo.com', 'Servifinder Contacto');
+			$mail->addAddress('correo2@correo.com');
 
 			//Content
 			$mail->isHTML(true);

@@ -155,7 +155,7 @@ $indice_inicial = max(0, ($pagina_actual - 1) * $resultados_por_pagina);
 			<div class="map-container" style="margin-top: 20px;">
 				<?php
 				//Guardamos nuestra apikey en una variable
-				$apiKey = 'AIzaSyDtzHBF_rP3-t9IQ8a55O28tLZVegRxwpU';
+				$apiKey = 'apikeycorrespondiente';
 				// Inicializamos la variable del mapa
 				$mapSrc = "https://www.google.com/maps/embed/v1/view?key=$apiKey&center=40.463667,-3.74922&zoom=5"; // Centro de España
 

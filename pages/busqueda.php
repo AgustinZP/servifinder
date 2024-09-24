@@ -153,7 +153,7 @@ $indice_inicial = max(0, ($pagina_actual - 1) * $resultados_por_pagina);
 			<div class="map-container" style="margin-top: 20px;">
 				<?php
 				//Guardamos nuestra apikey en una variable
-				$apiKey = 'AIzaSyDtzHBF_rP3-t9IQ8a55O28tLZVegRxwpU';
+				$apiKey = 'apikeycorrespondiente';
 				//comprobamos si se ha pasado el parametro localidades y lo guardamos en la variable localidad
 				$localidad = isset($_GET['localidades']) ? htmlspecialchars($_GET['localidades']) : '';
 				$mapSrc = '';

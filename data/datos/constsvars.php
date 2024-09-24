@@ -2,14 +2,6 @@
 	 
 	// asegura que los acentos y eñes contenidos en los strings son tratados correctamente
 	header('Content-Type: text/html; charset=UTF-8');
-	
-	// URL del servidor de la p�gina
-	const ROUTE_SERVER = 'http://localhost/web_infoland/';
-
-	//const ROUTE_SERVER = 'https://infoland.es';
-	
-	// nombre y extensi�n de la p�gina principal
-    const PRINCIPAL_PAGE = ROUTE_SERVER . 'index.php';
 			
 	// VARIABLES PARA CONEXION DESDE LOCALHOST
 	

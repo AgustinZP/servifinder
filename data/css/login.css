@@ -1,0 +1,373 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ESTILO CABECERA */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.navbar a{
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-top: 70px;
+    margin-left: 830px;
+}
+
+.btn-outline-success{
+    float: right;
+    margin-top: 15px;
+    margin-right: 40px;
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+/* BUSCADOR */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-outline-success-form{
+    height: 45px;
+    width: auto;
+    border-radius: 50px;
+    border: none;
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.form-group {
+    width: 350px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.form-group select {
+    height: 200px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.form-control{
+    height: 45px;
+    width: 350px;
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ESTILO AUTCOMPLETADO */
+#sugerencias1, #sugerencias2 {
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+#sugerencias1 option, #sugerencias2 option {
+    cursor: pointer;
+}
+
+#sugerencias1 option:not(:last-child),
+#sugerencias2 option:not(:last-child) {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#sugerencias1 option:hover,
+#sugerencias2 option:hover {
+    background-color: #e0e0e0;
+}
+
+/* ESTILO PASOS */
+.container-body {
+    display: flex;
+}
+
+.container-pasos{
+    margin-left: 350px;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-pasos h2{
+    color: #1155CC;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-pasos h3{
+    color: rgb(52, 52, 52);
+    text-align: center;
+}
+
+.container-pasos p{
+    text-align: center;
+    color: rgb(52, 52, 52);
+    font-size: 25px;
+}
+
+.container-pasos .bi {
+    color: #1155CC;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container-pasos a {
+    color: #1155CC;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.container-pasos a:hover {
+    text-decoration: underline; 
+}
+
+/* FORMULARIO LOGIN */
+.form-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-body {
+    width: 80%; 
+    padding: 15px; 
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(167, 165, 165);
+}
+
+.form-body label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: block;
+}
+
+.form-body input[type="submit"] {
+    width: 20%;
+    padding: 8px; 
+    background-color: #1155CC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-body input[type="submit"]:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+    color: white;
+}
+
+.parrafo-login {
+    color: rgb(52, 52, 52);
+}
+
+.parrafo-login a {
+    color: blue;
+}
+
+.mensaje {
+    text-align: center;
+    color: crimson;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.card-columns .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-group .col {
+    padding: 0 10px; /* Espacio entre las tarjetas en la fila */
+}
+
+.card {
+    margin-bottom: 10px; /* Espacio entre las tarjetas */
+}
+
+.card a{
+    text-decoration: none;
+    color: grey;
+}
+
+.card-title{
+    color: dimgray;
+}
+
+.card-body .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-body .col-sm-6,
+.card-body .col-sm-2 {
+    width: auto; 
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card {
+    position: relative;
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Estilo para el enlace dentro del contenedor */
+.footer-card .text-container a {
+    color: white; /* Texto blanco */
+}
+
+/* Estilo para la imagen */
+.footer-card .footer-image {
+    border-radius: 15px;
+    width: 1100px;
+    height: auto;
+}
+
+.text-container p{
+    font-size: 25px;
+}
+
+.text-container a{
+    color: white;
+    background:#1155CC;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.custom-hover {
+    background-color: rgb(100, 176, 179);
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    
+}
+
+.card-body a{
+    color: white;
+}
+
+.card-footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+.card-footer p {
+    text-align: center;
+    
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+.custom-hover:hover {
+    background-color: rgba(100, 176, 179, 0.8);
+}
+
+
+.btn-outline-success:hover,
+.btn-outline-success-form:hover,
+.text-container a:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.container-wide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(100, 176, 179, 0.8);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.pinkstone {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}

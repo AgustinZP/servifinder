@@ -1,0 +1,371 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ESTILO CABECERA */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.navbar a{
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-top: 70px;
+    margin-left: 830px;
+}
+
+.btn-outline-success{
+    float: right;
+    margin-top: 15px;
+    margin-right: 40px;
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn-outline-success-form{
+    height: 45px;
+    width: auto;
+    border-radius: 50px;
+    border: none;
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/*BUSCADOR */
+.card-title {
+    text-align: center;
+}
+
+.form-container-buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.form-group select {
+    height: 200px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.form-control{
+    height: 45px;
+    width: 350px;
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ESTILO AUTCOMPLETADO */
+#sugerencias1, #sugerencias2 {
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    width: 350px;
+    z-index: 1000;
+}
+
+#sugerencias1 option, #sugerencias2 option {
+    cursor: pointer;
+}
+
+#sugerencias1 option:not(:last-child),
+#sugerencias2 option:not(:last-child) {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#sugerencias1 option:hover,
+#sugerencias2 option:hover {
+    background-color: #e0e0e0;
+}
+
+/* FORMULARIO DE CONTACTO */
+.form-container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.parrafo {
+    width: 40%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.parrafo .form-title {
+    text-align: center;
+}
+
+.form-group {
+    width: 90%; /* Ajusta el ancho de los campos de entrada */
+    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-right: 10px;
+}
+
+.form-body {
+    width: 20%; /* Ajusta el ancho del formulario */
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgb(167, 165, 165);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-body input {
+    width: 77%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 75%;
+    height: 100px;
+    left: 0;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-check-input {
+    width: 15px; /* Ancho del checkbox */
+    height: 15px; /* Altura del checkbox */
+}
+
+.form-body label {
+    width: 1150px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.form-body button {
+    width: 90px;
+    padding: 8px;
+    margin-left: 130px;
+    background-color: #1155CC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-body button:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+    color: white;
+}
+
+.parrafo {
+    color: rgb(52, 52, 52);
+}
+
+.parrafo a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.parrafo a:hover {
+    text-decoration: underline;
+}
+
+.mensaje {
+    text-align: center;
+    color: crimson;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.card-columns .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-group .col {
+    padding: 0 10px; /* Espacio entre las tarjetas en la fila */
+}
+
+.card {
+    margin-bottom: 10px; /* Espacio entre las tarjetas */
+}
+
+.card a{
+    text-decoration: none;
+    color: grey;
+}
+
+.card-title{
+    color: dimgray;
+}
+
+.card-body .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-body .col-sm-6,
+.card-body .col-sm-2 {
+    width: auto; 
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card {
+    position: relative;
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Estilo para el enlace dentro del contenedor */
+.footer-card .text-container a {
+    color: white;
+}
+
+/* Estilo para la imagen */
+.footer-card .footer-image {
+    border-radius: 15px;
+    width: 1100px;
+    height: auto;
+}
+
+.text-container p{
+    font-size: 25px;
+}
+
+.text-container a{
+    color: white;
+    background:#1155CC;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.custom-hover {
+    background-color: rgb(100, 176, 179);
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    
+}
+
+.card-body a{
+    color: white;
+}
+
+.card-footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+.card-footer p {
+    text-align: center;
+    
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+.custom-hover:hover {
+    background-color: rgba(100, 176, 179, 0.8);
+}
+
+
+.btn-outline-success:hover,
+.btn-outline-success-form:hover,
+.text-container a:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.container-wide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(100, 176, 179, 0.8);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.pinkstone {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}

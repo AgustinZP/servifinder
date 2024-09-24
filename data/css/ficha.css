@@ -1,0 +1,466 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.navbar-brand img {
+    margin-top: 70px;
+    margin-left: 830px;
+}
+
+.navbar a{
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-outline-success {
+    margin-top: 25px;
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+/* BUSCADOR */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-outline-success-form {
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    height: 45px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.form-group {
+    width: 350px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.form-group select {
+    height: 200px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.form-control {
+    height: 45px;
+    width: 350px;
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* AUTOCOMPLETADO */
+#sugerencias1, #sugerencias2 {
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+#sugerencias1 option, #sugerencias2 option {
+    cursor: pointer;
+}
+
+#sugerencias1 option:not(:last-child),
+#sugerencias2 option:not(:last-child) {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#sugerencias1 option:hover,
+#sugerencias2 option:hover {
+    background-color: #e0e0e0;
+}
+
+.container-resultados {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column-izquierda {
+    width: 30%;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.column-derecha {
+    width: 60%;
+    margin-right: 100px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+/* MAPA */
+iframe{
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+/* DETALLE EMPRESA */
+.detalle-empresa{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(167, 165, 165);
+}
+
+.info > .horarios {
+    border-bottom: none !important;
+}
+
+.titulo-empresa{
+    color: #333;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.categoria-seleccionada{
+    margin-top: 0;
+    padding-top: 5px;
+    font-size: 14px;
+    color:rgb(167, 165, 165);
+}
+
+.telefono{
+    float: right;
+    padding-right: 20px;
+}
+
+.telefono a {
+    text-decoration: none;
+}
+
+.telefono-icono {
+    color: #1155CC;
+    font-size: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.telefono-icono:hover {
+    color: #87CEEB;;
+}
+
+.website a,
+.google a{
+    color: #1155CC;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.website a:hover,
+.google a:hover,
+.telefono a:hover{
+   text-decoration: underline;
+}
+
+#telefono-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#telefono-info {
+    background-color: rgb(1, 102, 218);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#telefono-info p {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+#telefono-info .telefono-texto {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.direccion,
+.conocer,
+.redes.titulo,
+.informacion.adicional{
+    margin-bottom: 0;
+    color: rgb(52, 52, 52);
+    font-size: 20px;
+}
+
+.informacion.adicional {
+    margin-bottom: 20px;
+}
+
+.texto{
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 14px;
+    color:rgb(117, 116, 116);
+}
+
+.horarios ul,
+.redes-sociales ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.propietario {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.propietario a {
+    margin-top: 15px;
+    background-color: #1155CC;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.horarios li{
+    margin-bottom: 5px;
+}
+
+.horarios p,
+.redes-sociales p,
+.info-izquierda p{
+    margin-bottom: 5px;
+    color: rgb(87, 83, 83);
+}
+
+/*FORMATO TABLA HORARIOS*/
+.horarios-tabla {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.horarios-tabla th {
+    background-color: rgb(225, 225, 225);
+    color: rgb(85, 85, 85);
+    font-size: 14px;
+    padding: 5px;
+}
+
+.horarios-tabla td {
+    background-color: rgb(232, 232, 232);
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+    padding: 5px;
+}
+
+.horarios-tabla th, .horarios-tabla td {
+    border: none;
+    text-align: left;
+    margin: 0;
+}
+
+.horarios-tabla tr {
+    margin-bottom: 2px; /* Espaciado entre filas */
+}
+
+/* FOOTER */
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto;
+}
+
+.card-columns .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-group .col {
+    padding: 0 10px; /* Espacio entre las tarjetas en la fila */
+}
+
+.card {
+    margin-bottom: 10px; /* Espacio entre las tarjetas */
+}
+
+.card a{
+    text-decoration: none;
+    color: grey;
+}
+
+.card-title{
+    color: dimgray;
+}
+
+.card-body .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.card-body .col-sm-6,
+.card-body .col-sm-2 {
+    width: auto; 
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card {
+    position: relative;
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajuste de posición para centrar */
+    width: 80%;
+    text-align: center;
+    color: white;
+    z-index: 1; /* Asegura que el texto esté encima de la imagen */
+}
+
+/* Estilo para el enlace dentro del contenedor */
+.footer-card .text-container a {
+    color: white;
+}
+
+/* Estilo para la imagen */
+.footer-card .footer-image {
+    border-radius: 15px;
+    width: 1100px;
+    height: auto;
+}
+
+.text-container p{
+    font-size: 25px;
+}
+
+.text-container a{
+    color: white;
+    background:#1155CC;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.custom-hover {
+    background-color: rgb(100, 176, 179);
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;   
+}
+
+.card-body a{
+    color: white;
+}
+
+.card-footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+.card-footer p {
+    text-align: center;
+    
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+.custom-hover:hover {
+    background-color: rgba(100, 176, 179, 0.8);
+}
+
+.btn-outline-success:hover,
+.btn-outline-success-form:hover,
+.text-container a:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.container-wide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(100, 176, 179, 0.8);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.pinkstone {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}

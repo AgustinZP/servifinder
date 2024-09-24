@@ -1,0 +1,312 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: #f8f9fa;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.navbar a{
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-top: 70px;
+    margin-left: 830px;
+}
+
+.btn-outline-success {
+    margin-top: 25px;
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+/* BUSCADOR */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-outline-success-form {
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    height: 45px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.form-group {
+    width: 350px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.form-group select {
+    height: 200px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.form-control {
+    height: 45px;
+    width: 350px;
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ /* AUTOCOMPLETADO */
+#sugerencias1, #sugerencias2 {
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+#sugerencias1 option, #sugerencias2 option {
+    cursor: pointer;
+}
+
+#sugerencias1 option:not(:last-child),
+#sugerencias2 option:not(:last-child) {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#sugerencias1 option:hover,
+#sugerencias2 option:hover {
+    background-color: #e0e0e0;
+}
+
+/* PRIVACIDAD */
+.titulo-grande {
+    font-size: 36px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(167, 165, 165);
+}
+
+.titulo-grande {
+    font-size: 36px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(167, 165, 165);
+}
+
+/* Párrafos */
+.card-body p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+/* Listas no ordenadas y ordenadas */
+.card-body ul, ol {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+/* Elementos de lista */
+.card-body li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+/* Títulos dentro de los párrafos */
+.card-body .h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card-text{
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* FOOTER */
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card-columns .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-group .col {
+    padding: 0 10px; /* Espacio entre las tarjetas en la fila */
+}
+
+.col p{
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 10px; /* Espacio entre las tarjetas */
+}
+
+.card a{
+    text-decoration: none;
+    color: grey;
+}
+
+.card-title{
+    color: dimgray;
+}
+
+.card-body .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.card-body .col-sm-6,
+.card-body .col-sm-2 {
+    width: auto; 
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card {
+    position: relative;
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    color: white;
+    z-index: 1; /* Asegura que el texto esté encima de la imagen */
+}
+
+/* Estilo para el enlace dentro del contenedor */
+.footer-card .text-container a {
+    color: white;
+}
+
+/* Estilo para la imagen */
+.footer-card .footer-image {
+    border-radius: 15px;
+    width: 1100px;
+    height: auto;
+}
+
+.text-container p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.text-container a{
+    color: white;
+    background:#1155CC;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.custom-hover {
+    background-color: rgb(100, 176, 179);
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.card-body a{
+    color: white;
+}
+
+.card-footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+.card-footer p {
+    text-align: center;
+    
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+.custom-hover:hover {
+    background-color: rgba(100, 176, 179, 0.8);
+}
+
+.btn-outline-success:hover,
+.btn-outline-success-form:hover,
+.text-container a:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.container-wide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100, 176, 179, 0.8);
+}
+
+.pinkstone {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}

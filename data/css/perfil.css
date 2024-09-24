@@ -1,0 +1,358 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-text{
+    float: right;
+    margin-top: 60px;
+    margin-right: 25px;
+    font-size: 24px;
+    color: darkslategray;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: blue;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.navbar-brand img{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+.btn-outline-success{
+    float: right;
+    margin-top: 15px;
+    margin-right: 40px;
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.form-control{
+    height: 45px;
+    width: 350px;
+    border: 1px solid #e0dddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-success-form{
+    height: 45px;
+    width: auto;
+    border-radius: 50px;
+    border: none;
+    background-color: #1155CC;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/* FORMULARIO ALTA EMPRESA */
+.form-title {
+    text-align: center;
+    margin-right: 100px;
+}
+
+.container-body {
+    display: flex;
+    
+}
+
+.container-pasos{
+    margin-left: 250px;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-pasos h2{
+    color: #1155CC;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-pasos h3{
+    color: rgb(52, 52, 52);
+    text-align: center;
+}
+
+.container-pasos p{
+    text-align: center;
+    color: rgb(52, 52, 52);
+    font-size: 25px;
+}
+
+.container-pasos .bi {
+    color: #1155CC;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container-pasos a {
+    color: #1155CC;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.container-pasos a:hover {
+    text-decoration: underline; 
+}
+
+/* Estilo para el contenedor principal */
+.form-container {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    margin-left: 80px;
+}
+
+.tablink, .tablink.active{
+    border-radius: 10px 10px 0 0;
+}
+
+.tablink{
+    color: #1155CC;
+}
+
+.tablink.active {
+    background-color: #1155CC;
+    color: white;
+}
+
+.tablink:focus,
+.tablink:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    width: 40%;
+    padding: 5px;
+    background-color: #1155CC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+    color: white;
+}
+
+/* Estilo para el contenido de las pestañas */
+.tabcontent {
+    display: none;
+    width: 270px;
+    padding: 10px;
+    margin-left: 80px;
+    border-top: none;
+    position: relative;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(167, 165, 165);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mostrar el contenido de la pestaña activa */
+#datosEmpresa.active, #horarios.active, #redesSociales.active {
+    display: block;
+}
+
+.alta-empresa label {
+    display: block;
+    margin-bottom: 3px; /* Espacio entre etiquetas */
+    font-weight: bold;
+}
+
+.alta-empresa input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.mensaje {
+    text-align: center;
+    color: crimson;
+    font-size: 24px;
+    margin-top: 70px;
+}
+
+/* FOOTER */
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.card-columns .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-group .col {
+    padding: 0 10px; /* Espacio entre las tarjetas en la fila */
+}
+
+.card {
+    margin-bottom: 10px; /* Espacio entre las tarjetas */
+}
+
+.card a{
+    text-decoration: none;
+    color: grey;
+}
+
+.card-title{
+    color: dimgray;
+    text-align: center;
+}
+
+.card-body .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.card-body .col-sm-6,
+.card-body .col-sm-2 {
+    width: auto; 
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card {
+    position: relative;
+}
+
+/* Estilo para el contenedor del texto */
+.footer-card .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajuste de posición para centrar */
+    width: 80%;
+    text-align: center;
+    color: white;
+    z-index: 1; /* Asegura que el texto esté encima de la imagen */
+}
+
+/* Estilo para el enlace dentro del contenedor */
+.footer-card .text-container a {
+    color: white;
+}
+
+/* Estilo para la imagen */
+.footer-card .footer-image {
+    border-radius: 15px;
+    width: 1100px;
+    height: auto;
+}
+
+.text-container p{
+    font-size: 25px;
+}
+
+.text-container a{
+    color: white;
+    background:#1155CC;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.custom-hover {
+    background-color: rgb(100, 176, 179);
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    
+}
+
+.card-body a{
+    color: white;
+}
+
+.card-footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+.card-footer p {
+    text-align: center;
+    
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+.custom-hover:hover {
+    background-color: rgba(100, 176, 179, 0.8);
+}
+
+
+.btn-outline-success:hover,
+.btn-outline-success-form:hover,
+.text-container a:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+}
+
+.container-wide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-wide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(100, 176, 179, 0.8);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.pinkstone {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}

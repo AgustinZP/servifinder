@@ -4,6 +4,8 @@
 
 Esta aplicación web es un buscador de empresas y servicios que permite a los usuarios buscar fácilmente según la categoría de actividad y la ubicación. Implementada con HTML, CSS y JavaScript en el frontend, y PHP en el backend, la aplicación proporciona una experiencia intuitiva y eficiente.
 
+Puedes probar la aplicación de forma rápida accediendo al siguiente enlace [Portfolio - Proyectos](https://www.agusdev.es/pages/proyectos.html)
+
 ## Funcionalidades
 
 - **Doble Buscador**: 

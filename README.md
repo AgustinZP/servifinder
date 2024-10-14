@@ -29,6 +29,3 @@ Puedes probar la aplicación de forma rápida accediendo al siguiente enlace [Po
 
 ## Contribución
 Las contribuciones son bienvenidas. Si tienes sugerencias o mejoras, no dudes en crear un Issue o enviar un Pull Request.
-
-## Licencia
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.

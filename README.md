@@ -1,4 +1,4 @@
-# Buscador Web de Empresas y Servicios (SERVIFINDER)
+# SERVIFINDER
 
 ## Descripción
 
